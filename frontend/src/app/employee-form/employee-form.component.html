@@ -1,0 +1,28 @@
+<div class="form-card">
+  <form (ngSubmit)="addEmployee(f)" #f="ngForm">
+    <div class="row">
+      <!-->First Name </!-->
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="First Name" ngModel name="firstName" required type="text" class="form-control" id="firstName">
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <!-->Last Name </!-->
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Last Name" ngModel name="lastName" required type="text" class="form-control" id="lastName">
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <!-->First Name </!-->
+      <mat-form-field appearence="outline" class="example-full-width">
+        <input matInput placeholder="Email" ngModel name="email" required type="email" class="form-control" id="email">
+      </mat-form-field>
+    </div>
+    <div class="buttons">
+      <button class="submit-button" type="submit" [disabled]="!f.valid" mat-raised-button color="primary">Submit</button>
+      <button routerLink="/api/employees" type="button" mat-raised-button>Cancel</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,41 @@
+.nav-link {
+  color: white;
+}
+
+a {
+  font-size: 1rem;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+.content {
+  position: relative;
+    margin-top: -2rem;
+}
+
+.content h2 {
+  position: absolute;
+  font-size: 2.5rem;
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.content h2:nth-child(2) {
+  color: #f2f6fc;
+  animation: animate 3s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%, 100% {
+    clip-path: polygon(0% 40%, 20% 39%, 41% 48%, 53% 55%, 62% 63%, 78% 55%, 92% 51%, 100% 56%, 100% 100%, 0% 100%);
+  }
+
+  50% {
+     clip-path: polygon(0% 60%, 25% 59%, 40% 59%, 53% 55%, 64% 43%, 79% 36%, 95% 44%, 100% 51%, 100% 100%, 0 100%);
+  }
+}

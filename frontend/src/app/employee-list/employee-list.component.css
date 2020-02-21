@@ -1,0 +1,10 @@
+table {
+  width: 100%;
+  margin: 2rem;
+  text-align: center !important;
+}
+
+th {
+  text-align: center !important;
+  font-weight: bold;
+}
